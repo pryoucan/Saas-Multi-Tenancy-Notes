@@ -20,10 +20,10 @@ npm install
 Create a `.env` file in the root of the project and add the following variables. Replace the values with your own.
 
 ```env
-# Your MongoDB connection string from Atlas with your password
+Your MongoDB connection string from Atlas with your password
 MONGODB_URI=mongodb+srv://...
 
-# A long, random, and secret string for signing JWTs, you can either make your own random key, or just use any random JWT key generator sites; there are plenty of them.
+A long, random, and secret string for signing JWTs, you can either make your own random key, or just use any random JWT key generator sites; there are plenty of them.
 JWT_SECRET=yourSuperSecretStringGoesHere
 ```
 
