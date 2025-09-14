@@ -11,8 +11,9 @@ const seedDatabase = async () => {
         const status = await mongoose.connect(process.env.MONGODB_URI);
         console.log('Database is connnected successfully, Seeding.....');
 
-        await Tenant.deleteMany({});
+        await Tenant.deleteMany({}); // Use this if you want a clean seeding, I'll delete all of them once for your, but make sure run this.
         await User.deleteMany({});
+        await Note.deleteMany({});
 
         const acmeTenant = await Tenant.create({
             name: 'Acme',

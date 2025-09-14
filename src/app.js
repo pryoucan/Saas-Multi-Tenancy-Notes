@@ -16,7 +16,16 @@ app.use(express.urlencoded({
     extended: true
 }));
 
+app.get('/health', (req, res) => {
+    res.json({
+        status: 'ok'
+    });
+});
+
+
 import userRouter from './routes/user.route.js';
-app.use('/user', userRouter);
+import noteRouter from './routes/note.route.js';
+app.use('/api/auth', userRouter);
+app.use('/api/notes', noteRouter)
 
 export default app
