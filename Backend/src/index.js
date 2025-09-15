@@ -1,9 +1,6 @@
 import dbConnectivity from './database/databaseConnectivity.js';
 import app from './app.js';
 
-
-
-
 const port = process.env.PORT || 5000;
 
 const databaseConnectionHandler = async () => {
