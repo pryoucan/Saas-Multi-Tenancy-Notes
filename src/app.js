@@ -1,5 +1,8 @@
 import express from 'express';
 import cors from 'cors'
+import dotenv from 'dotenv'
+dotenv.config();
+
 const app = express();
 
 app.use(cors({
@@ -25,7 +28,10 @@ app.get('/health', (req, res) => {
 
 import userRouter from './routes/user.route.js';
 import noteRouter from './routes/note.route.js';
+import tenantRouter from './routes/tenant.route.js';
+
 app.use('/api/auth', userRouter);
-app.use('/api/notes', noteRouter)
+app.use('/api/notes', noteRouter);
+app.use('/api/tenants', tenantRouter);
 
 export default app
