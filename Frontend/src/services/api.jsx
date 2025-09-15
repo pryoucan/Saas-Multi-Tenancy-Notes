@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'https://yardstick-u93m-m7fxv6cy7-axbyczs-projects.vercel.app/api';
 
 const getToken = () => localStorage.getItem('authToken');
 
