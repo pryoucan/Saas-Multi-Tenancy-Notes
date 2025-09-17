@@ -102,6 +102,3 @@ All test accounts use the password: `password`
 | `user@globex.test` | Member | Globex |
 
 
-
-### Note:
-For easier testing and reference, I've included a minimal frontend application with limited set of core features.
