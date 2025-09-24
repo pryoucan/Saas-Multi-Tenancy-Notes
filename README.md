@@ -1,4 +1,3 @@
-## Multi-Tenant SaaS Notes Application
 This is a secure and scalable backend API for multi-tanants (companies basically) Software-as-a-Service (SaaS) application. 
 The system is designed to serve multiple companies from a single instance.
 
